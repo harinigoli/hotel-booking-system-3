@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Name - Welcome</title>
+    <style>
+        /* CSS with Animations */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: lightcoral;
+}
+
+header {
+    background-color: blueviolet;
+    color: #fff;
+    padding: 20px;
+    animation: slideInDown 1s ease-in-out; /* Slide in from top animation */
+}
+
+header h1 {
+    margin: 0;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out; /* Fade in animation */
+}
+
+footer {
+    background-color: lightblue;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    animation: slideInUp 1s ease-in-out;
+     /* Slide in from bottom animation */
+
+}
+
+/* Search Form Styles */
+#search-form {
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+#search-form input[type="text"],
+#search-form input[type="date"],
+#search-form input[type="number"],
+#search-form button {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Featured Rooms Styles */
+#featured-rooms {
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.room {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+/* Button Styles */
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+#promotions{
+    font-size: 25px;
+}
+#about-us{
+    font-size: 25px;
+}
+#testimonials{
+    font-size: 25px;
+
+}
+#contact-info{
+    font-size: 25px;
+}
+
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Royal Harini Hotel</h1>
+        
+    </header>
+    <main>
+        <section id="welcome-message">
+            <h2>Welcome to our hotel!</h2>
+            <p>Experience luxury and comfort at Royal Harini. Book your stay now!</p>
+        </section>
+        <section id="search-form">
+            <h2>Search for Available Rooms</h2>
+            <form>
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" placeholder="Enter location" required>
+                
+                <label for="check-in">Check-in Date:</label>
+                <input type="date" id="check-in" name="check-in" required>
+                
+                <label for="check-out">Check-out Date:</label>
+                <input type="date" id="check-out" name="check-out" required>
+                
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" name="guests" min="1" required>
+                
+                <button type="submit">Search</button>
+            </form>
+        </section>
+        <section id="featured-rooms">
+            <h2>Featured Rooms</h2>
+            <!-- Showcase featured rooms here -->
+            <div class="room">
+                <h3>Deluxe Room</h3>
+                <p>Spacious room with a king-sized bed and stunning city views.</p>
+                <button>View Details</button>
+            </div>
+            <div class="room">
+                <h3>Executive Suite</h3>
+                <p>Luxurious suite with separate living and sleeping areas.</p>
+                <button>View Details</button>
+            </div>
+        </section>
+        <section id="promotions">
+            <h2>Promotions and Special Offers</h2>
+            <!-- Highlight promotions and offers here -->
+            <p>Stay 3 nights and get the 4th night free! Limited time offer.</p>
+        </section>
+        <section id="about-us">
+            <h2>About Us</h2>
+            <p>Hotel Name is a luxury hotel located in the heart of the city. We offer world-class amenities and exceptional service to make your stay unforgettable.</p>
+            <p>Our hotel features a rooftop pool, fitness center, spa, and fine dining restaurant. Experience the best of luxury and comfort at Hotel Name.</p>
+        </section>
+        <section id="testimonials">
+            <h2>Testimonials</h2>
+            <!-- Display testimonials here -->
+            <p>"Amazing hotel with top-notch service! Will definitely stay here again."</p>
+            <p>"The rooms are spacious and beautifully decorated. Highly recommend Hotel Name for your next stay!"</p>
+        </section>
+        <section id="contact-info">
+            <h2>Contact Information</h2>
+            <p>If you have any questions or need assistance, please contact us:</p>
+            <p>Phone: +1234567890</p>
+            <p>Email: info@Royal Harini.com</p>
+            <!-- Include social media links here -->
+            <p>Follow us on social media:</p>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </section>
+    </main>
+    
+</body>
+</html>

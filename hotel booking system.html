@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking System</title>
+    <link rel="stylesheet" href="hotel booking system.css">
+    <script src="https://kit.fontawesome.com/a594f0d63b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <center><h1>Hotel Booking System</h1></center>
+        
+        <nav>
+            <ul>
+                <li><i class="fa-solid fa-house"></i><a href="./home.html">Home</a></li>
+                <li><i class="fa-solid fa-magnifying-glass"></i><a href="./search.html">Search</a></li>
+                <li><i class="fa-solid fa-book"></i><a href="./booking.html">Booking</a></li>
+                <li><i class="fa-solid fa-check"></i><a href="./confirmation.html">Conformation</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Welcome to Hotel Booking System</h2>
+            <!-- Add content for home page here -->
+        </section>
+    </main>
+    <section id="hotel-images">
+        <h2>Discover Our Hotel</h2>
+        <div class="image-gallery">
+            <img src="./hotel 10.jpg" alt="Hotel Room 1">
+            <img src="./hotel 2.jpg" alt="Hotel Room 2">
+            <img src="./hotel 3.jpg" alt="Hotel Room 3">
+            <img src="./hotel 4.jpg" alt="Hotel Room 3">
+            <img src="./hotel 5.jpg" alt="Hotel Room 3">
+            <img src="./hotel 6.jpg" alt="Hotel Room 3">
+            <img src="./hotel 11.jpg" alt="Hotel Room 3">
+            <img src="./hotel 9.jpg" alt="Hotel Room 3">
+            <img src="./hotel 10.jpg" alt="Hotel Room 3">
+            <img src="./hotel 11.jpg" alt="Hotel Room 3">
+            
+
+    <footer>
+        <p>Contact us at: example@email.com</p>
+        <p>&copy; 2024 Hotel Booking System. All rights reserved.</p>
+    </footer>
+    
+    <script>
+         
+        // JavaScript for Image Gallery
+        const images = document.querySelectorAll('.image-gallery img');
+
+        images.forEach(image => {
+            image.addEventListener('click', () => {
+                // Replace the image source with a larger version or open a modal with the full-size image
+                // Example:
+                // window.open(image.src, '_blank');
+            });
+        });
+    
+
+   
+
+
+    </script>
+</body>
+</html>
